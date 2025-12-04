@@ -57,15 +57,28 @@ assign sum= (a ^ b);
 assign carry= ( a & b); 
 endmodule
 ~~~
+~~~
+module hs(a,b,difference,borrow); 
+input a,b; 
+output difference,borrow; 
+assign difference= (a ^ b); 
+assign borrow= ( ~a & b); 
+endmodule
+~~~
+
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
 Developed by:Kawin RegisterNumber:*/ 25016780
 
 **RTL Schematic**
 <img width="1022" height="702" alt="exp 3a RTL" src="https://github.com/user-attachments/assets/541972b9-9ad6-4230-9104-aecc44a7cab6" />
+<img width="923" height="490" alt="exp 3b RTL diagram" src="https://github.com/user-attachments/assets/1618dc55-9ef0-49c9-a481-fef74b7cf92b" />
+
 
 **Output/TIMING Waveform**
 <img width="1919" height="841" alt="exp 3a waveform" src="https://github.com/user-attachments/assets/87e19a57-6674-44b7-a123-68e42a02bcee" />
+<img width="1896" height="772" alt="exp 3b waveform" src="https://github.com/user-attachments/assets/e9902a16-e30c-49af-bf73-3d83049f2365" />
+
 
 **Result:**
 Thus to design a half adder and half substractor circuit and verify its truth table in Quartus using verilog progamming verified.
